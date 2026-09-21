@@ -25,16 +25,19 @@ export default function User() {
         label="Nombre de usuario:"
         value={data.username}
         onChange={newValue => setData({...data, username: newValue})}
+        required
     />
     <TextField
         label="Correo electrónico:"
         value={data.email}
         onChange={newValue => setData({...data, email: newValue})}
+        required
     />
     <SecretField
         label="Contraseña:"
         value={data.password}
         onChange={newValue => setData({...data, password: newValue})}
+        required
     />
     <SecretField
         label="Rol:"
@@ -44,6 +47,7 @@ export default function User() {
             {value: 'user', label: 'Usuario'},
             {value: 'admin', label: 'Administrador'},
         ]}
+        required
     />
     </Form>
 }

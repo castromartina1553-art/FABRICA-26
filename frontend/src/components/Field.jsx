@@ -1,9 +1,14 @@
 export default function Field({ //sirve para crear un campo de formulario con una etiqueta y un input
     label,
-    children
+    children,
+    required = false    
 }){
     return <div>
-        <label>{label}</label>
+        
+        <label>
+            {required && <span style={{ color: 'red' }} title="Este dato es obligatorio">*</span>}
+            {label}
+        </label>
         {children}
     </div>
 
