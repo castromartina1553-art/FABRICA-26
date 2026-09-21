@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login';
-
+import User from './pages/User';
 const routes = [
     {//lista de elementos de rutas, la barra tendra el mainlayout y el outlet, el path principal pongo home sino pongo about
         path: '/',
@@ -21,12 +21,16 @@ const routes = [
                 element: <About />,
             },
             {
-                path: '*',
-                element: <NotFound/>,
-            },
-            {
                 path: '/login',
                 element: <Login/>,
+            },
+            {
+                path: '/user',
+                element: <User/>,
+            },
+            {
+                path: '*',
+                element: <NotFound/>,
             }
      
 ],

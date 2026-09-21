@@ -7,8 +7,9 @@ export default function Menu() {
     }}
   >
         <Link to="/">Inicio</Link>
-        <Link to="/about">Acerca de</Link>
-        <Link to="/home">Otra cosa</Link>
         <Link to="/login">Login</Link>
+        <Link to="/about">Acerca de</Link>
+        <Link to="/user">Agregar usuario</Link>
+
   </nav>;
 }
